@@ -1,0 +1,80 @@
+body{ 
+  background-color: rgb(12, 158, 109);
+}
+
+/*buttons*/
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+/* container*/
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.doos {
+  background: rgb(29, 184, 137) ;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px black;
+}
+
+.doos p { 
+  font-size: 23px;
+  line-height: 1.5;
+}
+
+/*plaatjes*/
+.galerij {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galerij img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px black;
+  transition: transform 0.3 ease;
+}
+
+.galerij img:hover {
+  transform: scale(1.05);
+}
+
+/* mobiel response*/
+@media (max-width: 768px) {
+  nav { 
+    flex-direction: column;
+    gap: 10px;
+    padding: 10;
+  }
+  
+  nav a {
+    font-size: 18px;
+  }
+
+  .doos {
+    padding: 20px;
+  }
+
+  .doos p {
+    font-size: 18px;
+  }
+}
