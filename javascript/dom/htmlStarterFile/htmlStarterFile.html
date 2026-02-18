@@ -93,7 +93,24 @@
     </div>
     <div class="container"></div>
     <script>
-      
+      const button = document.querySelector('.button');
+      const container = document.querySelector('.container');
+      let elementCount = 0;
+      const maxElements = 49;
+      let clicked = false;
+
+      button.addEventListener('click', function() {
+        if (!clicked) {
+          clicked = true;
+          for (let i = 1; i <= maxElements; i++) {
+            const newElement = document.createElement('div');
+            newElement.classList.add('container__item');
+            newElement.textContent = i;
+            container.appendChild(newElement);
+          }
+          button.disabled = true;
+        }
+      });
     </script>
   </body>
 </html>
