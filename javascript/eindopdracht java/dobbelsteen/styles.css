@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+.dobbel img {
+    width: 80px;
+    margin: 0,5px;
+}
+
+#uitkomst {
+    font-size: 25px;
+    margin: 10px 0;
+    font-weight: bold;
+}

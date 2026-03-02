@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dobbelsteen Spel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="dobbel.js" defer></script>
+</head>
+<body>
+    <h1>Dobbelsteen Spel</h1>
+    <section id="spel">
+        <div class="spelerDobbel">
+            <h2>Jij</h2>
+            <div class="dobbel">
+                <img id="p1" src="dice1.png" alt="Dobbelsteen 1">
+                <img id="p2" src="dice1.png" alt="Dobbelsteen 1">
+            </div>
+        </div>
+        <div class="spelerDobbel">
+            <h2>Computer</h2>
+            <div class="dobbel">
+                <img id="c1" src="dice1.png" alt="Dobbelsteen 1">
+                <img id="c2" src="dice1.png" alt="Dobbelsteen 1">
+            </div>
+        </div>
+    </section>
+
+    <button id="gooi">gooi de dobbelstenen</button>
+
+    <div id="uitkomst"></div>
+
+    <section id="statistieken">
+        <p>gewonen: <span id="gewonnen">0</span></p>
+        <p>verloren: <span id="verloren">0</span></p>
+        <p>gelijkespellen: <span id="gelijkspel">0</span></p>
+    </section>
+</body>
+</html>
