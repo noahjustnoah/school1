@@ -10,8 +10,15 @@ loginButton.addEventListener("click", (event) => {
   let isCorrect =
     username === "Noah" && password === "Perp";
 
-  message.style.color = isCorrect ? "black" : "red";
-  message.textContent = isCorrect
-    ? "Ingelogd! Welkom"
-    : "Gebruikersnaam of wachtwoord is onjuist. Probeer het opnieuw.";
+  //message.style.color = isCorrect ? "black" : "red";
+  //message.textContent = isCorrect
+  //  ? "Ingelogd! Welkom"
+  //  : "Gebruikersnaam of wachtwoord is onjuist. Probeer het opnieuw.";
+if (isCorrect) {
+  message.style.color = "black";
+  message.textContent = "Ingelogd! Welkom";
+} else {
+  message.style.color = "red";
+  message.textContent = "Gebruikersnaam of wachtwoord is onjuist. Probeer het opnieuw.";
+}
 });
