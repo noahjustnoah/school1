@@ -1,0 +1,1 @@
+ <!-- omdat er geen .php achter de naam van het bestand staat //  -->
